@@ -7,7 +7,9 @@ const App = () => {
         <Navbar/>
         <Hero/>
         <Transcation/>
+        
         <Footer/>
+        
     </div>
   )
 }
