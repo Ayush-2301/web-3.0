@@ -30,29 +30,22 @@ const Hero = () => {
           </div>
           <p className='m-2 ml-1'>Address :</p>
         </div>
-        <div className='blue-glassmorphism w-full p-5 my-3'>
+        <div className='blue-glassmorphism w-[400px] p-5 my-3'>
           <UserInput placeholder="Address" name="addressTo" type="text" handleChange={() => {}}/>
           <UserInput placeholder="Amount (ETH)" name="amount" type="number" handleChange={() => {}}/>
-          <UserInput placeholder="Keyword (Gif)" name="keyword" type="text" handleChange={() => {}}/>
+          <UserInput placeholder="Keyword (GIF)" name="keyword" type="text" handleChange={() => {}}/>
           <UserInput placeholder="Enter Message" name="message" type="text" handleChange={() => {}}/>
-
           <div className="h-[1px] w-full bg-gray-400 my-2" />
-
-          {false ? (
-            <Loader />
-          ) : (
+          {true ?  (<Loader />) : (
             <button 
             type="button"
             onClick={handleSubmit}
-            className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer"
-            >
+            className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer">
               Send Now
             </button>
           )}
-
         </div>
       </div>
-        
     </div>
   )
 }
