@@ -1,3 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Roboto+Condensed&display=swap");
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.back {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+.logo {
+  filter: invert(90%);
+}
+.text-gradient {
+  background-image: linear-gradient(
+    315deg,
+    rgba(158, 75, 138, 1) 18%,
+    rgba(144, 33, 118, 1) 48%,
+    rgba(109, 34, 153, 1) 85%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.gradient-bg-transactions {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+.gradient-bg-footer {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 150%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.eth-card {
+  background-color: #a099ff;
+  background: linear-gradient(
+    90deg,
+    #3f023a,
+    #480242,
+    #5c0455,
+    #76105c,
+    #8f1e62,
+    #a72d67,
+    #bf3d6b,
+    #d54e6f,
+    #eb6071,
+    #ff7474
+  );
+  background-size: 200% 200%;
+  animation: change 10s ease-in-out infinite both alternate;
+}
+@keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
