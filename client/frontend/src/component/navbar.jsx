@@ -9,6 +9,7 @@ const Navbar = () => {
       </div>
       <div className='p-5 mt-4 mr-24 text-xl font-poppins text-gray-300' >
         <ul className='space-x-10 flex'>
+          <li className='hover:cursor-pointer'><a href={`https://goerli.etherscan.io/`}>EtherScan</a></li>
           <li className='hover:cursor-pointer'> Contact</li>
           <li className='hover:cursor-pointer'> Details</li>
           <li className='hover:cursor-pointer'>Get started</li>
